@@ -1,21 +1,57 @@
-# KIUPortal-Engine
+# About KIU Portal for macOS.
 
-Thanks for using KIUPortal for macOS.
-KIUPortal for macOS is built by Wine (the Linux/Unix Windows Execution Libraries) and it's wrapped by Wineskin.
+KIU Portal for macOS is an Kyungil University Student Portal System built for macOS.
+Officially, portal system only supports Windows PC. (This is not an official application from school)
 
-However, this application is not official, and it's also very unstable than original Windows verison.
-Application includes essential Windows frameworks and libraries to operate software "alike Windows"
+Previously, macOS users must install Bootcamp (Windows) or Parelles Desktop (Virtual Machine).
+Both methods needs full version of Windows, which is heavy, expensive, and storage hungry.
 
-This is what happens to your mac when you start your portal.
+KIUPortal for macOS is near 600MB, and you can run natviely at macOS.
+It is still heavy than using portal system at Windows, but it way more lighter than using Bootcamp and Parelles.|
 
-1) You stat "KIU Portal.app" which created by Automater (which is deafualt application on macOS)
-2) Automater calls "portal.ezxml" with "KIUFramework.app"
-3) "KIUFramework.app" is built by Wineskin Winery and it includes Window's frameworks and libraries.
-4) When "KIUFramework.app" starts up, application calls essential Windows framework and libraris to make system alike Windows.
-5) After essential stuffs load finished, EzPlatformViewer launches, and call "portal.ezxml" to start actual portal system.
 
-For these reasons, application has big file size (not bigger thant Bootcamp neither Parelles Desktop)
-But it's essential thing, because the application was built only for the Windows. 
+# How deoes it work
 
-Software was built in Wineskin Winery and tested on Macbook Pro and other Custom-Mac Systems.
+University portal is built by "EZgen" Web builder which developed by DaegilSoft.
+Therefore, you must use "EZPlatformViewer" to open website (in this case - "portal system") properly.
+
+If you visit, main portal service page (http://portal.kiu.ac.kr/), system tries to install viewer on your sytem.
+However school only provides viewer for the Windows, so Unix/Linux users are not able to use them.
+
+Developer said this platform can be used on UNIX/LINUX/Windows, so in theory, it should support macOS.
+But software company seems lazy enough to keep their website at 2004, so it is hard to expect any kind of support. 
+
+"KIU Portal for macOS" operates portal system by faking your macOS to seem "alkie Windows"
+So, using "KIU Portal for macOS" gives you exact user-interface and feautures with Windows.
+
+
+# About usability 
+
+Software was tested on Macbook Pro and other Custom-Mac Systems.
+Even though, it is still buggy, and It could have some non-specified errors.
+
+So, If you're going to do something important, It would be better select Windows PC.
+
+
+# How does it work (for Developers)
+
+"KIU Portal for macOS.app" is an script file generated with Automater on macOS.
+Script calles Finder to open "ezgen.ezxml" with "KIUFramework.app".
+
+"KIUFramework.app" is an main application which operates portal system.
+It is built by WineHQ and Wineskin (Wineskin Winery on macOS)
+
+The app has tiny Windows system taht includes minimal framework and libraries to run portal system. 
+
+For these reasons, application has big file size than other natively-build Mac application.
+But it's essential, because the application was built only for the Windows. 
+
+Anything related to Windows enviroment, please refer to "Thanks to" section.
+
+
+# Thanks to..
+
+WineHQ (https://www.winehq.org)
+Wineskin Winery (http://wineskin.urgesoftware.com/tiki-index.php?page=Downloads)
+Unofficial Wineskin upate for Mojave (http://portingteam.com/topic/11037-wineskin-unofficial-update/)
 
