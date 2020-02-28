@@ -7,7 +7,7 @@ Previously, macOS users must install Bootcamp (Windows) or Parelles Desktop (Vir
 Both methods needs full version of Windows, which is heavy, expensive, and storage hungry.
 
 KIUPortal for macOS is near 600MB, and you can run natviely at macOS.
-It is still heavy than using portal system at Windows, but it way more lighter than using Bootcamp and Parelles.|
+It is still heavy than using portal system at Windows, but it way more lighter than using Bootcamp and Parelles.
 
 
 # How deoes it work
